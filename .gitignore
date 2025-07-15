@@ -16,3 +16,4 @@ build
 storage
 poetry.lock
 models
+.DS_Store
