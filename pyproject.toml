@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "buddy"
+version = "0.1.0"
+description = "A personal AI assistant API for scheduling, alarms, and tracking using speech"
+authors = ["Asheesh Singh <asheeshsingh0112@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{ include = "buddy", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "3.11.*"
+fastapi = "^0.111.0"
+uvicorn = { extras = ["standard"], version = "^0.30.0" }
+python-multipart = "^0.0.9"
+speechrecognition = "^3.10.1"
+pyttsx3 = "^2.90"
+pydub = "^0.25.1"
+soundfile = "^0.13.1"
+transformers = "^4.53.2"
+torch = "^2.7.1"
+openai = "^1.95.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.0"
+black = "^24.4.2"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
